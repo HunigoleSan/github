@@ -1,0 +1,179 @@
+:root{
+    --bg-primary: #0d1117;
+    --color-arrow:#B1B1B1;
+    --color-transparent-90: #ffffff90;
+    --color-transparent-75: #ffffff75;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Mona Sans';
+}
+/* Class Optimization */
+.border-white-1{
+    border: 0.0625rem solid var(--color-transparent-90);
+}
+.p-8px{
+    padding: 8px;
+}
+.p-1{
+    padding: 1rem;
+}
+.py-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.px-1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.color-white{
+    color: white;
+}
+.currentColor{
+    fill: currentColor;
+}
+.g-1{
+    gap: 1rem;
+}
+.g-2{
+    gap: 2rem;
+}
+.m-1{
+    margin: .5rem;
+}
+.mr-1{
+    margin-right: .5rem;
+}
+.ml-1{
+    margin-left: .5rem;
+}
+.m-2{
+    margin: 1rem;
+}
+.mr-2{
+    margin-right: 1rem;
+}
+.mr-3{
+    margin-right: 1.5rem;
+}
+.mr-4{
+    margin-right: 2rem;
+}
+.mrl-1{
+    margin-right: 4px;
+}
+.ml-2{
+    margin-left: 1rem;
+}
+
+.d-flex{
+    display: flex;
+}
+.jc-center{
+    justify-content: center;
+}
+.jc-between{
+    justify-content: space-between;
+}
+.ai-center{
+    align-items: center;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.width-full{
+    width: 100%;
+}
+/* HEADER */
+.headerMenu{
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.headerMenu__logo{
+    color: white;
+}
+/* NAVEGATION */
+.navegation{
+    height: 40px;
+}
+.navegation__lists{
+    list-style-type: none;
+    cursor: pointer;
+    
+}
+.navegation__list{
+    color: white;
+    transition: color 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.headerMenu__dropdown{
+    /* opacity: 1;
+    transform: scale(1) translateY(0);
+    transform-origin: top; */
+}
+
+.navegation__list:hover{
+    color: var(--color-transparent-90);
+}
+.navegation__list:hover .icon-arrow{
+    transform: translateY(4px);
+    
+    
+}
+.icon-arrow{
+    transform: translateY(2px);
+    color: var(--color-arrow);
+    fill: currentColor;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transition-duration: 500ms;
+    transition-property: opacity,transform;
+}
+/* HEADER FORMULARIO AND ACCESS ACCOUNT , REGISTER */
+.headerMenu__links{
+    color: white;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+}
+.headerMenu__links--up{
+    padding: 5px 8px;
+}
+.searchContainer{
+    background: rgba(46,55,74,.82);
+    height: 32px;
+    border-radius: 6px;
+    width: 324px;
+    padding-left: 6px;
+    border: 1px solid #57606a;
+    cursor: pointer;
+}
+.svg{
+    width: 16px;
+    height: 16px;
+    color: #57606a;
+    fill: currentColor;
+}
+.searchContainer__span{
+    color: var(--color-transparent-75);
+    font-size: 14px;
+    display: table-cell;
+    flex: 1;
+}
+/* MAIN */
+.mainContainer{
+    color: white;
+}
+.mainContainer__picture{
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+}
+.mainContainer__picture > img{
+    right: -1050px;
+    max-width: calc(230vw + 1670px);
+}

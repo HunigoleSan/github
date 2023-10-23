@@ -1,0 +1,562 @@
+:root{
+    --color-header-search-bg: #24292f;
+    --color-header-search-border: #57606a;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+
+}
+body{
+    background: #0d1117;
+    overflow-x: hidden;
+}
+
+.position-relative{
+    position: relative;
+    z-index: 30;
+}
+.b-radius-50{
+    border-radius: 50px;
+}
+.color{
+    fill: currentColor;
+    color: white; 
+}
+.d-block{
+    display: block;
+}
+.d-flex{
+    display: flex;
+}
+.j-content-center{
+    justify-content: center;
+}
+.a-items-center{
+    align-items: center;
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.flex-wrap-wrap{
+    flex-wrap: wrap;
+}
+.gap-05{
+    gap: .5rem;
+}
+.gap-1{
+    gap: 1rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+
+.pd-x-05{
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+
+.pd-05{
+    padding: .5rem;
+}
+.pd-07{
+    padding: .7rem;
+}
+.pd-1{
+    padding: 1rem;
+}
+.pd-2{
+    padding: 2rem;
+}
+.pd-y-02{
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+.pd-y-03{
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+}
+.pd-y-1{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.pd-x-1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.pd-x-2{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.deslizar{
+    width: 500px;
+    display: none;
+    background: white;
+    padding: 1.5rem 0rem;
+    border-radius: 7px;
+    position: absolute;
+    z-index: 100;
+    top: 85%;
+    left: -15px;
+}
+.pd-0{
+    padding: 0rem;
+}
+.pd-top-1{
+    padding-top: 1.4rem;
+}
+.pd-bottom-1{
+    padding-bottom: 1.4rem;
+    
+}
+.width-100{
+    width: 100%;
+}
+.width-300px{
+    width: 300px;
+}
+
+.transparent{
+    background: transparent;
+}
+.m-1{
+    margin: 1rem;
+}
+.mr-05{
+    margin-right: .5rem;
+}
+.mr-1{
+    margin-right: 1rem;
+}
+.mb-3{
+    margin-bottom: 3rem;
+}
+.mb-6{
+    margin-bottom: 6rem;
+}
+.border-left{
+    border-left: 1px solid #dad9d9;
+}
+.border-bottomServicio{
+    border-bottom: 1px solid #dad9d9;
+}
+
+.width-max-content{
+    width: max-content;
+}
+/* serv */
+
+.servicios__columnaIzquierda{
+    padding: 0rem 2rem 0rem 1rem
+}
+.servicios__card{
+    padding-left: .5rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.25rem;
+}
+.servicios__cardLinks{
+    text-decoration: none;
+}
+
+.servicios__spanColor,
+.servicios__linksColor{
+    color: #707780;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+
+
+.servicios__spanColor--negrita,
+.servicios__linksColo--negrita{
+    font-weight: bold;
+    color: #313438;
+}
+.servicios__linksColo--negrita{
+    font-weight: bold;
+    font-size: 17px;
+
+}
+.servicios__iconColor{
+    color: #707780;
+    fill: currentColor;
+}
+/* ENCABEZADO DE NAVEGACION WEB*/
+.headerMenu{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+.navegacion__listas{
+    list-style-type: none;
+}
+.navegacion__li{
+    position: relative;
+}
+.navegacion__link{
+    color: #fff;
+    text-decoration: none;
+}
+.navegacion__link:hover + .deslizar{
+    display: flex;
+    
+}
+.deslizar:hover{
+    display: flex;
+}
+
+.formulario{
+    /* width: 324px; */
+}
+.formulario__buscar{
+    /* width: 324px; */
+    background: rgba(46,55,74,.82);
+    border-radius: 6px;
+    border: 1px solid #57606a;
+}
+.formulario__icon{
+    width: max-content;
+    height: 20px;
+}
+.formulario__input{
+    border: 0px;
+    outline: none;
+    color: rgba(255,255,255,.75);
+}
+.formulario__input::placeholder{
+    color: rgba(255,255,255,.75);
+    font-size: 14.5px;
+}
+.formulario__acceso,
+.pie__boton{
+    color: white;
+    text-decoration: none;  
+    border: 1px solid white;
+}
+.pie__boton{
+    width: max-content;
+}
+.active{
+    border-radius: 7px;
+    border: 1px solid white;
+}
+.pagina_hero {
+    position: absolute;
+    right: -1050px;
+    /* max-width: 5000px; */ /* Averiguar por que no funciona sin calc */
+    /* max-width: calc(230vw + 1670px); */
+
+}
+.servicios__hover:hover,
+.servicios__hover:hover .servicios__iconColor,
+.servicios__hover:hover .servicios__spanColor,
+.servicios__linksColor:hover{
+    color: #1670DB;
+}
+
+/* CONTENIDO WEB */
+.pagina{
+    position: relative;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 90%);
+    padding: 0rem 2rem;
+    justify-content: center;
+
+}
+
+.container__campana,
+.container__productividad,
+.container__mona{
+    padding: 0rem 1.5rem;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.container__campana {
+    
+}
+.container__productividad{
+    height: auto;
+    padding-top: inherit;
+}
+.container__mona{
+    height: auto;
+    padding-top: inherit;
+}
+.campana{
+    height: 100%;
+    width: max-content;
+    /* padding-top: 128px; */
+    /* padding-left: 1rem; */
+}
+.campana,
+.productividad,
+.mono{
+    width: 90%;
+}
+.campana__designBorder,
+.productividad__designBorder{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.productividad__designBorder{
+    padding-top: inherit;
+}
+.campana__borderBottom,
+.productividad__borderBottom{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: linear-gradient(
+        #d2a8ff,
+        #a371f7 10%, 
+        #196c2e 70%, 
+        #2ea043 80%, 
+        #56d364);
+    width: 3px;
+    height: 100%;
+}
+.productividad__borderBottom--verde{
+    background: linear-gradient(#56d364, #2ea043, #0d1117);
+}
+.campana__borderTop{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    background: linear-gradient(
+        #d2a8ff,
+        #a371f7 10%);
+    width: 3px;
+    height: 100%;
+}
+.campana__code,
+.productividad__code{
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.campana__codeSvg{
+    position: relative;
+    z-index: 3;
+
+}
+.campana__luminoso,
+.productividad__luminoso{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: #dd7df7;
+    filter: blur(17px);
+}
+.productividad__luminoso--verde{
+    background: #7ee787;
+}
+.campana__githubUniverse{
+    margin-top: 1rem;
+    width: 100%;
+}
+.campana__githubEnlace{
+    justify-content: space-around;
+    /* background: linear-gradient(
+        90deg,
+        rgba(1, 1, 1, 0.6) 0%, 
+        rgba(1, 1, 1, 0.461139) 59.76%, 
+        rgba(1, 1, 1, 0) 100%); */
+    background: black;
+    /* border: 1px solid #424b5b; */
+    /* border-radius: 100px; */
+    max-width: max-content;
+    gap: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+.campana__enlaceTitulo{
+    font-weight: bold;
+    font-size: 18px;
+
+}
+.campana__enlaceDescripcion{
+    font-size: 17px;
+}
+.campana_tituloPrincipal{
+    font-size: 95px;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: white;
+
+}
+.campana__descripcionPrincipal{
+    font-size: 38px;
+    color: #7d8590;
+    margin-bottom: 2.5rem;
+    font-feature-settings: unset;
+}
+.campana__formulario{
+    display: flex;
+    gap: 3rem;
+}
+.campana__formularioRegistrarse{
+    width: 41%;
+    display: flex;
+   /*  border-radius: 7px; */
+    /* overflow: hidden; */
+}
+.campana__control,
+.campana__enviar{
+    padding: 10px 15px;
+    border: 0px;
+}
+
+.campana__control{
+    width: 55%;
+    color: #24292f;
+    font-size: 18px;
+}
+/* .campana__control::placeholder{
+    color: silver;
+    font-size: 18px;
+} */
+.campana__enviar{
+    cursor: pointer;
+    width: max-content;
+    /* background: linear-gradient(180deg, rgba(183, 52, 179, 0.15) 0%, rgba(164, 46, 156, 0) 100%),#6e40c9 !important;
+     */
+    background: rgb(185, 34, 185);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    /* border-radius: 0px 7px 7px 0px; */
+}
+.campana__iniciarPrueba{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 7px; */
+    padding: 10px 15px;
+    /* box-shadow: #bc8cff 0 0 0 1px inset; */
+    border: 1px solid rgb(185, 34, 185);
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.campana__frase{
+    color: #6e7781;
+}
+.productividad__titulo{
+    color: white;
+    font-size: 30px;
+    width: max-content;
+}
+.productividad__descripcion,
+.github_codespaces,
+.pie__descripcion{
+    font-size: 62px;
+    line-height: 55px;
+    color: white;
+    font-weight: 500;
+    width: 75%;
+}
+.pie__descripcion{
+    font-size: 15px;
+    line-height: inherit;
+    color: #6e7781;
+    padding-bottom: 32px;
+}
+.github_codespaces{
+    font-size: 27px;
+    color: #57606a;
+    line-height: 33px;
+}
+.pie__descripcion > span{
+    color: white;
+}
+.github_codespaces > span{
+    color: white;
+}
+.productividad__descripcion > span{
+    color: #7ee787;
+}
+.mona__img{
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+}
+.pie__titulo{
+    color: white;
+    font-size: 30px;
+}
+.pie__enlaces{
+    margin-top: 2rem;
+}
+.pie__enlaces > p{
+    color: #7d8590;
+}
+.pie__enlaces > a{
+    color: #7d8590;
+    text-decoration: none;
+    margin-bottom: 16px;
+    display: block;
+}
+/* RESPONSIVE */
+@media screen and (max-width:1100px) {
+    .campana_tituloPrincipal{
+        font-size: 55px;
+    }
+    .campana__descripcionPrincipal{
+        font-size: 20px;
+    }
+    .campana__formulario{
+        flex-direction: column;
+    }
+    .campana__formularioRegistrarse{
+        width: 100%;
+    }
+    .campana__control{
+        width: 70%;
+    }
+    .campana__githubEnlace{
+        padding: .5rem;
+    }
+    .campana__enlaceTitulo {
+        font-size: 16px;
+    }
+    .campana__enlaceDescripcion{
+        font-size: 14px;
+    }
+    .productividad__descripcion{
+        font-size: 35px;
+        line-height: 35px;
+        width: 100%;
+    }
+    .mona__img{
+        width: 100%;
+        height: 100%;
+    }
+    .pagina {
+        padding: 0rem 0rem;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .headerMenu{
+        justify-content: center;
+        gap: 1.5rem;
+    }    
+}
