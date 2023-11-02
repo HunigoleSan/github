@@ -353,6 +353,7 @@ body {
     color: white;
     position: relative;
     top: -72px;
+    z-index: -1;
 }
 
 .mainContainer__picture {
@@ -426,7 +427,7 @@ body {
         height: 100%;
         overflow: hidden;
     }
-
+   
     .navegation__dropdown-animation{
         visibility: hidden;
         opacity: 0;
