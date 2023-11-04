@@ -471,6 +471,7 @@ body {
     position: relative;
     
 }
+
 .mainContainer-lines-hero{
     left: calc(50% - 12px);
     width: 437px;
@@ -486,10 +487,17 @@ body {
     filter: blur(17px);
     
 }
+.glowing-green{
+    background: var(--bg-glowing-green);
+    margin: 0px auto;
+}
 .mainContainer-lines-border{
     background: linear-gradient(#d2a8ff, #a371f7 10%, #196c2e 70%, #2ea043 80%, #56d364);
     height: 100%;
     width: 3px;
+}
+.line-border-green{
+    background: linear-gradient(#56d364, #2ea043, var(--color-canvas-default));
 }
 
 /* SEGUNDO CONTENEDOR DE MAIN */
@@ -641,6 +649,35 @@ body {
 }
 .line-responsive-543{
     display: none;
+}
+/* SECCION PRODUCTIVIDAD */
+
+
+.productivity-phrase{
+    width: 74.99999997%;
+    font-weight: 500;
+    margin-bottom: 96px;
+}
+.productivity-phrase-title{
+    color: white;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    width: max-content;
+    margin-bottom: 24px;
+}
+.productivity-phrase-description{
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.03em;
+}
+
+.productivity-phrase-description > span{
+    color: var(--color-text-green);
+}
+
+.productivity{
+    padding: 32px 16px 64px 16px;
 }
 @media screen and (max-width: 1011px) {
     body:has(.open) {
@@ -864,6 +901,13 @@ body {
     .mainContainer-buildWithIa-organizations-logo{
         width: 100%;
     }
+    .productivity-phrase{
+        width: 91.66666663%;
+    }
+    .productivity-phrase-description{
+        font-size: 40px;
+        line-height: 44px;
+    }
 
 }
 @media screen and (max-width: 767px){
@@ -942,7 +986,10 @@ body {
         display: inline-block;
         width: 100%;
     }
-    
+    .productivity-phrase-description{
+        font-size: 28px;
+        line-height: 32px;
+    }
 }
 @media screen and (max-width: 543px) {
     body{
