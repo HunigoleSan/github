@@ -21,12 +21,6 @@ NAVEGATION_LIST_RESPONSIVE.forEach(function(currentValue,index,item){
             list.removeEventListener('mouseover', null);
             list.removeEventListener('mouseout', null);
         }
-
-        /* list.addEventListener('mouseover',function(){
-            container_svg.classList.remove('navegation-menu-hover');
-            container_data.classList.add('show');
-            list.removeEventListener('mouseover', null);
-        });*/
         
         container_data.addEventListener('mouseover',function(){
             container_svg.classList.add('navegation-menu-hover');
